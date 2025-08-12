@@ -61,10 +61,12 @@ const popularDestinations = [
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <HeroBanner />
+      <section id="home">
+        <HeroBanner />
+      </section>
 
       {/* Features Section */}
-      <section className="py-16 px-4 bg-gray-50">
+      <section id="features" className="py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold bg-gradient-to-r from-yellow-600 via-red-500 to-yellow-600 text-transparent bg-clip-text font-display text-center mb-12">
             Explore the Philippines
@@ -78,7 +80,7 @@ export default function Home() {
       </section>
 
       {/* Popular Destinations */}
-      <section className="py-16 px-4">
+      <section id="destinations" className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold bg-gradient-to-r from-yellow-600 via-red-500 to-yellow-600 text-transparent bg-clip-text font-display text-center mb-12">
             Popular Destinations
@@ -92,10 +94,12 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="py-16 px-4 bg-yellow-50">
+      <section id="about" className="py-16 px-4 bg-yellow-50">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8">
           <div className="md:w-1/2 w-full">
-            <h2 className="text-3xl font-bold bg-gradient-to-r from-yellow-600 via-red-500 to-yellow-600 text-transparent bg-clip-text font-display mb-4">About the Philippines</h2>
+            <h2 className="text-3xl font-bold bg-gradient-to-r from-yellow-600 via-red-500 to-yellow-600 text-transparent bg-clip-text font-display mb-4">
+              About the Philippines
+            </h2>
             <p className="text-lg text-gray-700 mb-6">
               The Philippines is a stunning archipelago of more than 7,600
               islands, each offering its own charm and wonder. Known for its
@@ -120,9 +124,18 @@ export default function Home() {
         </div>
       </section>
 
-      <CultureSection />
-      <TraditionalGames />
-      <Celebrations />
+      {/* Culture Section */}
+      <section id="culture">
+        <CultureSection />
+      </section>
+
+      <section id="traditional-games" className="py-16">
+        <TraditionalGames />
+      </section>
+
+      <section id="celebrations" className="py-16">
+        <Celebrations />
+      </section>
 
       <Footer />
     </main>

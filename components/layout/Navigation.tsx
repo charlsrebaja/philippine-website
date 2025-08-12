@@ -6,15 +6,30 @@ import { Button } from "../ui/button";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/provinces", label: "Provinces" },
-  { href: "/attractions", label: "Attractions" },
-  { href: "/culture", label: "Culture" },
-  { href: "/contact", label: "Contact" },
+  { href: "/#home", label: "Home" },
+  { href: "/#destinations", label: "Attractions" },
+  { href: "/#culture", label: "Culture" },
+  { href: "/#about", label: "About" },
+  { href: "/#traditional-games", label: "Games" },
+  { href: "/#celebrations", label: "Celebrations" },
 ];
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const scrollToSection = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
+    if (href.startsWith("/#")) {
+      e.preventDefault();
+      const element = document.getElementById(href.substring(2));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+        setIsOpen(false);
+      }
+    }
+  };
 
   return (
     <nav className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 border-b">
@@ -42,6 +57,7 @@ export default function Navigation() {
               <Link
                 key={link.href}
                 href={link.href}
+                onClick={(e) => scrollToSection(e, link.href)}
                 className="text-gray-700 hover:text-yellow-600 px-3 py-2 text-sm font-medium transition-colors"
               >
                 {link.label}
