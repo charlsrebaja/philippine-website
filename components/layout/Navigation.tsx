@@ -10,8 +10,6 @@ const navLinks = [
   { href: "/provinces", label: "Provinces" },
   { href: "/attractions", label: "Attractions" },
   { href: "/culture", label: "Culture" },
-  { href: "/history", label: "History" },
-  { href: "/symbols", label: "Symbols" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -32,7 +30,7 @@ export default function Navigation() {
                 height={32}
                 className="w-8 h-8"
               />
-              <span className="text-xl font-bold text-yellow-600">
+              <span className="text-xl font-bold bg-gradient-to-r from-yellow-600 via-red-500 to-yellow-600 text-transparent bg-clip-text font-display">
                 Philippines
               </span>
             </Link>

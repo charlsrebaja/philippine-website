@@ -66,7 +66,7 @@ export default function Home() {
       {/* Features Section */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">
+          <h2 className="text-3xl font-bold bg-gradient-to-r from-yellow-600 via-red-500 to-yellow-600 text-transparent bg-clip-text font-display text-center mb-12">
             Explore the Philippines
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -80,7 +80,7 @@ export default function Home() {
       {/* Popular Destinations */}
       <section className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">
+          <h2 className="text-3xl font-bold bg-gradient-to-r from-yellow-600 via-red-500 to-yellow-600 text-transparent bg-clip-text font-display text-center mb-12">
             Popular Destinations
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -95,11 +95,17 @@ export default function Home() {
       <section className="py-16 px-4 bg-yellow-50">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8">
           <div className="md:w-1/2 w-full">
-            <h2 className="text-3xl font-bold mb-4">About the Philippines</h2>
+            <h2 className="text-3xl font-bold bg-gradient-to-r from-yellow-600 via-red-500 to-yellow-600 text-transparent bg-clip-text font-display mb-4">About the Philippines</h2>
             <p className="text-lg text-gray-700 mb-6">
-              The Philippines is an archipelagic country composed of over 7,600
-              islands. With its rich history, diverse culture, and natural
-              beauty, it offers unforgettable experiences for every traveler.
+              The Philippines is a stunning archipelago of more than 7,600
+              islands, each offering its own charm and wonder. Known for its
+              vibrant culture, warm hospitality, and breathtaking natural
+              landscapes, the country is a melting pot of traditions influenced
+              by centuries of history. From pristine white-sand beaches and
+              crystal-clear waters to majestic mountains and lush rainforests,
+              every corner invites exploration. Whether you’re seeking thrilling
+              adventures, rich cultural experiences, or simply a place to
+              unwind, the Philippines promises memories that last a lifetime.
             </p>
           </div>
           <div className="w-full md:w-1/2 aspect-[4/3] relative">

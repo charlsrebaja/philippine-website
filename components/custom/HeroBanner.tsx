@@ -85,7 +85,7 @@ export default function HeroBanner() {
         <div className="text-center text-white max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             It&apos;s more fun in the {" "}
-            <span className="text-yellow-400">Philippines</span>
+            <span className="bg-gradient-to-r from-yellow-600 via-red-500 to-yellow-600 text-transparent bg-clip-text font-display">Philippines</span>
           </h1>
           <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
             {slides[currentSlide].description}
