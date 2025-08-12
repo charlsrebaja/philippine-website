@@ -44,7 +44,7 @@ const popularDestinations = [
   {
     title: "Chocolate Hills",
     description: "Unique geological formation in Bohol",
-    imageUrl: "/images/image2.jpg",
+    imageUrl: "/images/image2.png",
   },
   {
     title: "Rice Terraces",

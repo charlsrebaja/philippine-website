@@ -18,14 +18,14 @@ const cultureCards = [
   {
     id: "clothing",
     title: "Traditional Attire",
-    image: "/images/culture/culture3.jpg",
+    image: "/images/culture/culture3.png",
     description:
       "The elegant Barong Tagalog and Maria Clara dress embody Filipino craftsmanship with intricate embroidery and delicate piña fabric.",
   },
   {
     id: "cuisine",
     title: "Filipino Cuisine",
-    image: "/images/culture/culture4.jpg",
+    image: "/images/culture/culture4.png",
     description:
       "Savor the flavors of adobo, sinigang, and lechon - dishes that tell the story of Filipino history through its unique blend of indigenous, Spanish, and Asian influences.",
   },

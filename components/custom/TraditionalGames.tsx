@@ -16,19 +16,18 @@ const traditionalGames = [
       "Players take turns trying to knock down a can while avoiding being tagged by the guard who must first retrieve the can.",
   },
   {
-    id: "saranggola",
-    name: "Pagpapalipad ng Saranggola",
-    image: "/images/games/game3.jpg",
-    description:
-      "A traditional outdoor game where players fly kites, often competing to keep theirs in the air the longest or skillfully maneuver them in the wind.",
-  },
-
-  {
     id: "patintero",
     name: "Patintero",
     image: "/images/games/game4.jpg",
     description:
       "A strategic team game played on a grid where players try to cross lines while avoiding being tagged by defenders.",
+  },
+  {
+    id: "saranggola",
+    name: "Pagpapalipad ng Saranggola",
+    image: "/images/games/game3.jpg",
+    description:
+      "A traditional outdoor game where players fly kites, often competing to keep theirs in the air the longest or skillfully maneuver them in the wind.",
   },
 ];
 
@@ -83,9 +82,8 @@ export default function TraditionalGames() {
           ))}
         </div>
 
-        
         {/* A short Quoate*/}
-        
+
         <div className="text-center mt-8">
           <p className="text-gray-800 italic">
             &quot;Ang kabataan ang pag-asa ng bayan.&quot;
