@@ -49,7 +49,7 @@ const popularDestinations = [
   {
     title: "Rice Terraces",
     description: "Ancient terraces carved into the mountains of Ifugao",
-    imageUrl: "/images/image3.jpg",
+    imageUrl: "/images/image3.png",
   },
   {
     title: "El Nido",

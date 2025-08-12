@@ -25,7 +25,7 @@ const festivals = [
     name: "Panagbenga Festival",
     location: "Baguio City",
     month: "February",
-    image: "/images/festivals/panagbenga.jpg",
+    image: "/images/festivals/Panagbenga.jpg",
     description:
       "A month-long flower festival showcasing Baguio's finest blooms with grand parades and street dancing competitions.",
   },
