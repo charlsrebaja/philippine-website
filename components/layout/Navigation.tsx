@@ -26,7 +26,7 @@ export default function Navigation() {
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center gap-2">
               <Image
-                src="/images/logo.jpg"
+                src="/images/logo.png"
                 alt="Philippines Logo"
                 width={32}
                 height={32}
