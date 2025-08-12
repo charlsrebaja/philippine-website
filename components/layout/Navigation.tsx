@@ -1,6 +1,7 @@
-"use client"
+"use client";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "../ui/button";
 import { Menu, X } from "lucide-react";
 
@@ -23,7 +24,14 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="flex items-center">
+            <Link href="/" className="flex items-center gap-2">
+              <Image
+                src="/images/logo.jpg"
+                alt="Philippines Logo"
+                width={32}
+                height={32}
+                className="w-8 h-8"
+              />
               <span className="text-xl font-bold text-yellow-600">
                 Philippines
               </span>

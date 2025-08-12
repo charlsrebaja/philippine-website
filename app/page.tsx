@@ -4,6 +4,9 @@ import HeroBanner from "@/components/custom/HeroBanner";
 import FeatureCard from "@/components/custom/FeatureCard";
 import DestinationCard from "@/components/custom/DestinationCard";
 import Footer from "@/components/custom/Footer";
+import CultureSection from "@/components/custom/CultureSection";
+import TraditionalGames from "@/components/custom/TraditionalGames";
+import Celebrations from "@/components/custom/Celebrations";
 
 const features = [
   {
@@ -91,7 +94,7 @@ export default function Home() {
       {/* About Section */}
       <section className="py-16 px-4 bg-yellow-50">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8">
-          <div className="md:w-1/2">
+          <div className="md:w-1/2 w-full">
             <h2 className="text-3xl font-bold mb-4">About the Philippines</h2>
             <p className="text-lg text-gray-700 mb-6">
               The Philippines is an archipelagic country composed of over 7,600
@@ -99,16 +102,21 @@ export default function Home() {
               beauty, it offers unforgettable experiences for every traveler.
             </p>
           </div>
-          <div className="md:w-1/2 relative h-[400px]">
+          <div className="w-full md:w-1/2 aspect-[4/3] relative">
             <Image
               src="/images/about-ph.jpg"
               alt="About Philippines"
               fill
-              className="object-cover rounded-lg"
+              className="object-cover rounded-lg shadow-lg"
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
         </div>
       </section>
+
+      <CultureSection />
+      <TraditionalGames />
+      <Celebrations />
 
       <Footer />
     </main>
